@@ -1,0 +1,62 @@
+@use "reset.scss";
+
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: "Roboto", sans-serif;
+}
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.row {
+    display: flex;
+}
+
+.header {
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    .header-content {
+        font-weight: 700;
+        font-size: 84px;
+    }
+}
+
+[class*="section"] {
+    padding: 70px 0px;
+}
+
+.main {
+    .item {
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        padding: 70px 0px;
+    }
+    .item-img {
+        width: 50%;
+    }
+    .title {
+        font-size: 48px;
+        margin-bottom: 15px;
+        font-weight: 700;
+    }
+    .subtitle {
+        font-size: 42px;
+        margin-bottom: 20px;
+        font-weight: 700;
+    }
+    .sub-subtitle {
+        font-size: 32px;
+        margin-bottom: 30px;
+        font-weight: 700;
+    }
+    .additional-info {
+        margin-top: 15px;
+    }
+    .item-name {
+        font-size: 32px;
+    }
+}
